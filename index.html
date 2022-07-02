@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Aplicação para treinar a memorização da tabuada.">
+	<title>Praticando a tabuada</title>
+
+	<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+	<form id="pickNumberF">
+		<input type="number" id="pickIdInput">
+		<button type="submit">Praticar</button>
+	</form>
+	<div id="quizWrapper">
+		<div class="question-container">
+			<h1><span id="firstNumber"></span> x <span id="secondNumber"></span></h1>
+		</div>
+		<form id="answerForm">
+			<input type="number" id="answerInput">
+			<button type="submit">Responder</button>
+		</form>
+	</div>
+</body>
+<script src="./script.js" defer></script>
+</html>
