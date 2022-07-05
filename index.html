@@ -10,19 +10,22 @@
 	<link rel="stylesheet" href="./style.css">
 </head>
 <body>
-	<form id="pickNumberF">
-		<input type="number" id="pickNumberInput">
-		<button type="submit">Praticar</button>
-	</form>
-	<div id="quizWrapper">
-		<div class="question-container">
-			<h1><span id="firstNumber"></span> x <span id="secondNumber"></span></h1>
-		</div>
-		<form id="answerForm">
-			<input type="number" id="answerInput">
-			<button type="submit">Responder</button>
+	<main>
+		<form id="pickNumberF">
+			<label for="pickNumberInput">Insira um número para praticar a tabuada:</label>
+			<input type="number" id="pickNumberInput" placeholder="Insira um número ">
+			<button type="submit">Praticar</button>
 		</form>
-	</div>
+		<div id="quizWrapper">
+			<div class="question-container">
+				<h1><span id="firstNumber"></span> x <span id="secondNumber"></span></h1>
+			</div>
+			<form id="answerForm">
+				<input type="number" id="answerInput" placeholder="Insira o resultado">
+				<button type="submit">Responder</button>
+			</form>
+		</div>
+	</main>
 </body>
 <script src="./script.js" defer></script>
 </html>

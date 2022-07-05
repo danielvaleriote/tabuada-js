@@ -4,7 +4,7 @@ const byId = id => document.getElementById(id); // Gets an element by ID
 
 // input methods
 const validateInput = ({value}) => value && Number(value) !== 0;
-const cleanInput = i => i.innerText = "";
+const cleanInput = i => i.value = "";
 
 const pickNumberF = byId("pickNumberF");
 
@@ -24,7 +24,8 @@ const pickNumber = e => {
 	if(!validateInput(pickNumberInput)) return;
 	chosenNumber = Number(pickNumberInput.value);
 	byId("quizWrapper").style.display = "flex";
-	updateOperation()
+	updateOperation();
+	cleanInput(pickNumberInput);
 };
 
 const submitAnswer = e => {
@@ -39,7 +40,7 @@ const pickRandomMultiplicand = () => {
 	if(currentMultiplicands.length == 0) {
 		currentMultiplicands = [...multiplicands];
 		return showResult();
-	} 
+	};
 	return currentMultiplicands.splice(Math.floor(Math.random() * currentMultiplicands.length), 1);
 };
 
