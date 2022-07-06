@@ -111,7 +111,7 @@ button:hover {
 	height: 120px;
 }
 
-#modal {
+.modal {
 	display: flex;
 	justify-content: center;
 	align-items: center;
